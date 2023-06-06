@@ -1,0 +1,14 @@
+@import '../../Styles/variables.scss';
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .container__logo {
+        padding: 1rem;
+    }
+    .link {
+        margin: 0 0.6rem;
+        color: $color-primary;
+        text-decoration: none;
+    }
+}
