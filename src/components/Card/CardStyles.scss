@@ -1,0 +1,25 @@
+@import "../../Styles/variables.scss";
+
+.card-image {
+    text-decoration: none;
+    margin: 0.8rem;
+    width: 90%;
+    height: 13rem;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    background-size: cover;
+    background-position: center;  
+  .card-content{
+    flex: 1;
+    width: 10%;
+    padding: 0 2rem 0 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

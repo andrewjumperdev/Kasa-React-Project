@@ -1,11 +1,19 @@
 import React from "react";
+import "./CardStyles.scss";
+import { Link } from "react-router-dom";
 
-function Card() {
+function Card(props) {
   return (
-    <div className="card">
-      <img src="" alt="" className="card--img" />
-      <p className="card-title">Titre de la location</p>
-    </div>
+    <Link
+      to={`/logement/${props.id}`}
+      className="card-image"
+      style={{ backgroundImage: `url(${props.pictures})` }}
+    >
+      <div className="card-content">
+      <p className="card-title">{props.title}</p>
+      </div>
+      
+    </Link>
   );
 }
 
