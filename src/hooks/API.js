@@ -1,23 +1,31 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { useState, useEffect } from "react";
 
 export const useCallApiHook = () => {
-  const [data, setData] = useState([]);
+  
+  const url = '../../logements.json'
+
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          "/logements.json"
-        );
-        setData(response.data);
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error("Error en la respuesta del servidor");
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+        setLoading(false);
       } catch (error) {
-        console.log(error);
+        setError(error);
+        setLoading(false);
       }
     };
 
     fetchData();
-  }, []);
+  }, [url]);
 
-  return data;
+  return { data, loading, error };
 };

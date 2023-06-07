@@ -4,7 +4,19 @@ import Card from "../../components/Card";
 import { useCallApiHook } from "../../hooks/API";
 
 function Home() {
-  const data = useCallApiHook();
+  const { data, loading, error } = useCallApiHook();
+
+  console.log(data)
+
+  if (loading) {
+    return <div>Cargando...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  
+
   return (
     <>
       <div className="container">

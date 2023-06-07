@@ -1,19 +1,17 @@
-import React, { useState } from 'react'
-import { useCallApiHook } from '../../hooks/API';
-import { useParams } from 'react-router-dom';
-import Carousel from '../Carousel/index';
+import React from 'react'
+import { useCallApiHook } from '../../hooks/API'
+import Carousel from '../Carousel'
+import { useParams } from 'react-router-dom'
 
-function CardDetail() {
 
-  const { id } = useParams();
-  const data = useCallApiHook();
-  const item = data.find((item) => item.id === id);
-  console.log(item)
-
+const CardDetail = () => {
+  const {id} = useParams();
+  const {data} = useCallApiHook()
+  console.log(data)
   return (
-    <div>
-      <Carousel images={item} />
-    </div>
+    <>
+      <Carousel data={data} id={id} />
+    </>
   )
 }
 

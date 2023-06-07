@@ -1,0 +1,36 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    .prev,
+    .next {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .prev {
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+    }
+    .photo-slider {
+        flex: 0 0 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;        
+    }
+}

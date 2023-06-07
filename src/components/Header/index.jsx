@@ -5,7 +5,7 @@ function Header() {
   return (
     <nav className="navbar">
       <Link to="/" className="container__logo">
-        <img src="./LOGO.png" />
+        <img src="../LOGO.png" />
       </Link>
 
       <div className="container__links">
