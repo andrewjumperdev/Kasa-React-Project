@@ -1,28 +1,31 @@
 import React, { useState } from 'react';
+import './Dropdown.scss'
 
-const Dropdown = ({ options, onSelect }) => {
-  const [selectedOption, setSelectedOption] = useState(null);
+const Dropdown = (props) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleOptionSelect = (option) => {
-    setSelectedOption(option);
-    onSelect(option);
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
-    <div className="dropdown">
-      <select
-        value={selectedOption}
-        onChange={(e) => handleOptionSelect(e.target.value)}
-      >
-        <option value="">Seleccionar opción</option>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
+    <div className='toggle-container'>
+      <button className='toggleDropdown' onClick={toggleDropdown}>
+        {props.title}
+        {isDropdownOpen ? 
+        <i className="fa-solid fa-angle-down fa-rotate-180"></i>
+        :
+        <i className="fa-solid fa-angle-down"></i>
+        }
+      </button>
+      {isDropdownOpen && (
+        <div className='drop-info'>
+          <p>{props.description}</p>
+        </div>
+      )}
     </div>
   );
 };
+
 
 export default Dropdown;

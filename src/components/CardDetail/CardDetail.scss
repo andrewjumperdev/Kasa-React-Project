@@ -1,8 +1,19 @@
+@import '../../Styles/variables.scss';
 
-
-
-
-
-
-
-
+.card-container {
+    margin: 0 5%;
+    .title {
+        color: $color-primary;
+    }
+    .location {
+        color: $color-primary;
+    }
+    .dropdown-description {
+        margin: 2rem auto;
+    }
+    .rating-host-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

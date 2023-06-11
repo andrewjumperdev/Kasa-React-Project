@@ -1,0 +1,19 @@
+@import '../../Styles/variables.scss';
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .name-user {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+        margin: 0.8rem;
+        color: $color-primary;
+    }
+    .photo-user {
+        width: 32px;
+        border-radius: 50%;
+    }
+}

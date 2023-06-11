@@ -1,0 +1,11 @@
+.tag-bubble-container {
+    display: flex;
+    justify-content: flex-start;
+    .tag-bubble {
+        margin-right: 2rem;
+        padding: 0.2rem 0.6rem;
+        background: #FF6060;
+        border-radius: 5px;
+        color: white;
+    }
+}
