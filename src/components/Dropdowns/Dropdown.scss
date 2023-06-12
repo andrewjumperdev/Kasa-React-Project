@@ -24,5 +24,17 @@
             padding: 0.8rem;
             color: $color-primary;
         }
+        .options-container {            
+            .list-container {
+                margin: 0;
+                padding: 0;
+                li{
+                    background: #F7F7F7;
+                    padding: 0.4rem;
+                    list-style: none;
+                    color: $color-primary;
+                }
+            }
+        }
     }
 }

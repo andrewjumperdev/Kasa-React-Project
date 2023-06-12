@@ -36,7 +36,7 @@ const CardDetail = () => {
       <UserProfile name={logement.value.host.name} picture={logement.value.host.picture} />
       </div> 
       <Dropdown className='dropdown-description' title='Description' description={logement.value.description}/>
-      <Dropdown title='Équipements' description={logement.value.description}/>
+      <Dropdown title='Équipements' equipments={logement.value.equipments}/>
     </div>
   )
 }
