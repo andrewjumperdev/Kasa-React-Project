@@ -1,3 +1,7 @@
+@import "../../sass/main.scss";
+@import "../../sass/utilities/variables.scss";
+@import "../../sass/utilities/functions.scss";
+
 .tag-bubble-container {
     display: flex;
     justify-content: flex-start;
@@ -7,5 +11,8 @@
         background: #FF6060;
         border-radius: 5px;
         color: white;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 }

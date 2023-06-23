@@ -1,5 +1,5 @@
 import React from 'react';
-import './TagBubbles.scss'
+import './styles.scss'
 
 const TagBubbles = ({ tags }) => {
   return (

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Rating.scss';
+import React from 'react';
+import './styles.scss';
 
 
 const Rating = ({ value }) => {
@@ -9,7 +9,6 @@ const Rating = ({ value }) => {
       const starClass = i <= value ? "fa-solid fa-star" :"fa-regular fa-star";
       stars.push(<span key={i} className={starClass}></span>);
     }
-    console.log(stars)
     return <div>{stars}</div>;
   };
   

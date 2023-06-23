@@ -7,7 +7,7 @@ const Home = () => {
   const { data, loading, error } = useCallApiHook();
 
   if (loading) {
-    return <div>Cargando...</div>;
+    return <div><div className="lds-ring"><div></div><div></div><div></div><div></div></div></div>;
   }
 
   if (error) {
@@ -19,7 +19,7 @@ const Home = () => {
       <div className="container">
         <div className="hero-image">
           <div className="hero-text">
-            <h1>Chez vous,partout et ailleurs</h1>
+            <p>Chez vous,partout et ailleurs</p>
           </div>
         </div>
       </div>

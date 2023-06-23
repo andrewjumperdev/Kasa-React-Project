@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import "./HeaderStyles.scss";
+import "./styles.scss";
 
 function Header() {
   return (
     <nav className="navbar">
       <Link to="/" className="container__logo">
-        <img src="../LOGO.png" />
+        <img className="logo" src="../LOGO.png" alt="Logo"/>
       </Link>
 
       <div className="container__links">

@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+@function breakpoint($size) {
+    $breakpoints: (
+      "small": 480px,
+      "medium": 768px,
+      "large": 1024px,
+      "xxl" : 1280px,
+    );  
+    @return map-get($breakpoints, $size);
+}

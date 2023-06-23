@@ -1,0 +1,26 @@
+@import "../../sass/main.scss";
+@import "../../sass/utilities/variables.scss";
+@import "../../sass/utilities/functions.scss";
+
+.footer-container {    
+    padding: 0;
+    margin: 0;
+    background: #000;
+    height: 10rem;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 30%;
+        @media (min-width: breakpoint("medium")) {
+            width: 15%;
+        }
+    }
+    p{
+        margin-top: 2rem;
+        font-size: 0.7rem;
+    }
+}

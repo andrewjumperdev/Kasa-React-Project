@@ -1,9 +1,0 @@
-@mixin full-responsive($breakpoints) {
-  @each $breakpoint in $breakpoints {
-    $name: nth($breakpoint, 1);
-    $size: nth($breakpoint, 2);
-    @media (max-width: $size) {
-      @content;
-    }
-  }
-}

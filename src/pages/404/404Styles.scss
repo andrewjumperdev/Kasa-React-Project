@@ -1,31 +1,49 @@
-@import '../../Styles/variables.scss';
+@import "../../sass/main.scss";
+@import "../../sass/utilities/variables.scss";
+@import "../../sass/utilities/functions.scss";
 .page-container {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    color: $color-primary; 
-    .info-container-page {
-        margin: 4rem auto;
-        h1{
-            font-family: Montserrat;
-            font-size: 96px;
-            font-weight: 700;
-            line-height: 137px;
-            letter-spacing: 0em;
-            text-align: center;            
-
-        }
-        p {
-            font-family: Montserrat;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 26px;
-            letter-spacing: 0em;
-            text-align: center;
-
-        }
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: $color-primary;
+  .info-container-page {
+    margin: 4rem auto;
+    h1 {
+      font-family: Montserrat;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 137px;
+      letter-spacing: 0em;
+      text-align: center;
+      @media (min-width: breakpoint("medium")) {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 288px;
+      }
     }
-    a {
-        color: $color-primary;
+    p {
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: center;
+      @media (min-width: breakpoint("medium")) {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+      }
     }
+  }
+  a {
+    color: $color-primary;
+    @media (min-width: breakpoint("medium")) {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
 }
