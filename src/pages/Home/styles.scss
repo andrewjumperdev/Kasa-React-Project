@@ -23,7 +23,7 @@
       justify-content: space-around;
       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../public/Banner.png");
       width: 90%;
-      height: 5.8rem;
+      height: 6.5rem;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -43,15 +43,21 @@
       }
       
       .hero-text {
-        padding: 2rem 0 2rem 1rem;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 1.5rem;
+        padding: 2rem 4rem 2rem 0rem;
+        font-family: Montserrat;
+        font-weight: 500;
+        line-height: 100%;
+        font-size: 1.3rem;
         display: flex;
         align-items: flex-end;
         color: #ffffff;
-        @media (min-width: breakpoint("medium")) {}
+        @media (min-width: breakpoint("medium")) {
+          p {
+           br {
+            display: none;
+           } 
+          }
+        }
       }
     }
   }

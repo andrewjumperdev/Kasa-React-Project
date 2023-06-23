@@ -4,6 +4,7 @@
 .page-container {
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 50%;
   text-align: center;
   color: $color-primary;
   .info-container-page {
@@ -23,6 +24,8 @@
       }
     }
     p {
+      width: 80%;
+      margin: 0 auto;
       font-family: Montserrat;
       font-size: 18px;
       font-weight: 500;
@@ -39,6 +42,11 @@
   }
   a {
     color: $color-primary;
+    font-size: 0.8rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-decoration-line: underline;
     @media (min-width: breakpoint("medium")) {
       font-family: "Montserrat";
       font-style: normal;

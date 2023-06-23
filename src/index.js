@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./sass/main.scss";
 import Home from "./pages/Home/";
-import Header from "./components/Header";
+import Nav from "./components/Nav";
 import CardDetail from "./pages/CardDetail";
 import PageNotFound from "./pages/404";
 import Apropos from "./pages/Apropos";
@@ -16,7 +16,7 @@ const App = () => {
   return (
     <React.StrictMode>
       <Router>
-        <Header />
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/logement/:id" element={<CardDetail />} />

@@ -19,7 +19,7 @@ const Home = () => {
       <div className="container">
         <div className="hero-image">
           <div className="hero-text">
-            <p>Chez vous,partout et ailleurs</p>
+            <p>Chez vous, <br/> partout et ailleurs</p>
           </div>
         </div>
       </div>
