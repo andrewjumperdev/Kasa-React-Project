@@ -95,11 +95,12 @@
     }
     .dropdowns-container {
         grid-area: description;
-        justify-self: stretch;
+        justify-items: center;        
+        align-items: start;
         @media (min-width: breakpoint("medium")) {
             display: flex;
-            align-items: center;
             justify-content: space-between;
+
         }
     }
 
