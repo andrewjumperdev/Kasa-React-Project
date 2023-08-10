@@ -18,6 +18,9 @@
         @media (min-width: breakpoint("medium")) {
             width: 15%;
         }
+        @media (min-width: breakpoint("xxl")) {
+            width: 8%;
+        }
     }
     p{
         margin-top: 2rem;

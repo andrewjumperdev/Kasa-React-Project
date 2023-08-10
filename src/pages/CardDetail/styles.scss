@@ -97,6 +97,7 @@
         grid-area: description;
         justify-items: center;        
         align-items: start;
+        margin-bottom: 2rem;
         @media (min-width: breakpoint("medium")) {
             display: flex;
             justify-content: space-between;

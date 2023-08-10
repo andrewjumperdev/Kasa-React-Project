@@ -8,6 +8,9 @@
         margin: 1rem 0;    
         width: 20rem;   
       }
+      @media (min-width: breakpoint("xxl")) { 
+        width: 35rem;
+      }  
     .toggleDropdown {
         background: $color-primary;
         border: none;
