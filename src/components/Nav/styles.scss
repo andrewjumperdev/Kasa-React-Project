@@ -15,10 +15,15 @@
         padding: 2rem;
         padding-bottom: 0;
     }
+    @media (min-width: breakpoint("xxl")) {
+        margin: 0;
+        padding: 1rem 12rem;
+    }
     .container__logo {
         padding: 1rem; 
+        padding-bottom: 0.3rem;
         .logo {
-            width: 100%;
+            width: 90%;
         }
     }
     .container__links {
